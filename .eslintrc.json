@@ -1,0 +1,45 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "react-hooks",
+    "@typescript-eslint"
+  ],
+  "globals": {
+    "describe": "readonly",
+    "it": "readonly",
+    "fit": "readonly",
+    "test": "readonly",
+    "expect": "readonly",
+    "afterEach": "readonly",
+    "beforeEach": "readonly",
+    "afterAll": "readonly",
+    "beforeAll": "readonly",
+    "fdescribe": "readonly"
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/indent": [
+      "off"
+    ],
+    "@typescript-eslint/prefer-interface": "off",
+    "react/jsx-first-prop-new-line": false,
+    "react/jsx-max-props-per-line": false,
+    "react/prop-types": false,
+    "no-underscore-dangle": "off",
+    "react/no-unescaped-entities": false,
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/camelcase": "off"
+  },
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
